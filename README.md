@@ -25,7 +25,8 @@ spec:
 ---
 
 ## Basic Concepts Treated
-* 1. API Version*
+*1. API Version*
+
   ```yaml
 apiVersion: v1
 ```
@@ -33,12 +34,15 @@ apiVersion: v1
 <img width="287" height="69" alt="image" src="https://github.com/user-attachments/assets/bef2a4d1-a0de-43d2-870f-8bde4ab01718" />
 
 
+
 *2. Resource Type*  
+
 ```yaml
 kind: Pod
 ```
   
 <img width="299" height="101" alt="image" src="https://github.com/user-attachments/assets/4cd4e40b-ba2a-4c05-aa28-4ec607996ac4" />
+
 
 
 *3. parent- child structure*
@@ -49,6 +53,7 @@ metadata:
 ```
 
 <img width="274" height="64" alt="image" src="https://github.com/user-attachments/assets/d475e3fe-9af2-4766-92c8-847092a43415" />
+
 
 *4. nested list: array*
     
