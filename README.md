@@ -47,7 +47,7 @@ kind: Pod
 
 
 
-*3. parent- child structure*
+*3. Parent- child structure*
 
 ```yaml
 metadata:
@@ -59,7 +59,7 @@ metadata:
 
 
 
-*4. nested list: array*
+*4. Nested list: array*
     
 ```yaml
 spec:
