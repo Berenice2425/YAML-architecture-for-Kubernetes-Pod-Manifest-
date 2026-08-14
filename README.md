@@ -4,67 +4,9 @@ This project provides a native, declarative Infrastructure-as-Code (IaC) configu
 
 ---
 
-## 📁 Repository Project Structure
-
-```text
-yaml-architecture/
-├── .git/               # Initialized local Git version tracking database
-├── README.md           # Deployment manual and workspace architecture guide
-└── pod.yaml            # Fixed structural declarative Kubernetes manifest
-```
-
----
-
 ## 💻 Kubernetes Configuration Spec (`pod.yaml`)
 
-### API Version
-
-echo "apiVersion: v1" > pod.yaml
-
-Creates a new pod.yaml file (overwriting any old contents) and inserts the core, stable Kubernetes API schema version.
-###  Resource Type
-
-echo "kind: Pod" >> pod.yaml
-
-Appends the resource classification to the file.
-###  Resource Metadata
-
-echo "metadata:" >> pod.yaml
-
-Appends the parent organizational block used by the cluster to hold names, tracking labels, and indexing context.
-###  Unique Identifier
-
-echo "  name: nginx-pod" >> pod.yaml
-
-Appends the unique name identifier string under the metadata layer to locate the running Pod instance within the cluster namespace.
-### Desired State Specification
-
-echo "spec:" >> pod.yaml
-
-Appends the technical engineering blueprint block that defines the target configuration constraints the cluster must actively maintain.
-### Container Manifest Array
-
-echo "  containers:" >> pod.yaml
-
-Appends the array list parent indicator that hosts the collection of isolated virtual application workflows inside this Pod.
-### Container Isolation Runtime Name
-
-echo "  - name: nginx" >> pod.yaml
-
-Appends a distinct container entry using the hyphen (-) indicator, assigning it a specific runtime tracking tag.
-### Container Registry Image Target
-
-echo "    image: nginx:latest" >> pod.yaml
-
-Appends the execution target, instructing the worker node container runtime to pull and execute the newest Nginx server binary package.
-### Print Manifest Verification
-
-cat pod.yaml
-
-Executes a terminal read operation to output the completed configuration file layout to the console for a final structural verification pass.
-------------------------------
-
-The verified, structurally accurate schema optimized to interface directly with the Kubernetes API Control Plane:
+This schema  is optimized to interface directly with the Kubernetes API Control Plane:
 
 ```yaml
 apiVersion: v1
@@ -81,6 +23,15 @@ spec:
 ```
 <img width="1458" height="593" alt="image" src="https://github.com/user-attachments/assets/f96034cc-80b0-447a-9f46-edf30980b84b" />
 
+---
+
+## Basic Concepts Treated
+*API Version*
+apiVersion: v1
+
+*Resource Type*
+kind: Pod
+
 *parent- child structure*
 metadata:
   name: nginx-pod          # Globally unique identifier within the cluster namespace
@@ -88,11 +39,36 @@ metadata:
 
 *nested list: array*
 spec:
-  containers:
+  containers:              # Declares the list array of isolated software application environments running inside this Pod.
   - name: nginx            # Isolated operational logic name tag
     image: nginx:latest    # Image target pulling from the container hub registry
+    
+    The hyphen (-) instantiates a specific container entry, assigning it a unique runtime logging tag.
 
 <img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
+
+
+| Architectural Layer | Terminal Execution Command | Functional Operational Description |
+|---|---|---|
+| API Version | echo "apiVersion: v1" > pod.yaml | Creates a new pod.yaml file (overwriting old content) and inserts the core, stable Kubernetes API schema version. |
+| Resource Type | echo "kind: Pod" >> pod.yaml | Appends the resource classification to the file, defining the deployment type as an atomic compute Pod capsule. |
+| Resource Metadata | echo "metadata:" >> pod.yaml | Appends the parent organizational block used by the cluster to hold names, tracking labels, and indexing context. |
+| Unique Identifier | echo " name: nginx-pod" >> pod.yaml | Appends the unique name identifier string under the metadata layer to locate the running Pod instance within the cluster namespace. |
+| Desired State Specification | echo "spec:" >> pod.yaml | Appends the technical engineering blueprint block that defines the target configuration constraints the cluster must actively maintain. |
+| Container Manifest Array | echo " containers:" >> pod.yaml | Appends the array list parent indicator that hosts the collection of isolated virtual application workflows inside this Pod. |
+| Container Isolation Runtime Name | echo " - name: nginx" >> pod.yaml | Appends a distinct container entry using the hyphen (-) indicator, assigning it a specific runtime tracking tag. |
+| Container Registry Image Target | echo " image: nginx:latest" >> pod.yaml | Appends the execution target, instructing the worker node container runtime to pull and execute the newest Nginx server binary package. |
+| Print Manifest Verification | cat pod.yaml | Executes a terminal read operation to output the completed configuration file layout to the console for a final structural verification pass. |
+
+
+## 📁 Repository Project Structure
+
+```text
+yaml-architecture/
+├── .git/               # Initialized local Git version tracking database
+├── README.md           # Deployment manual and workspace architecture guide
+└── pod.yaml            # Fixed structural declarative Kubernetes manifest
+```
 
 ---
 
