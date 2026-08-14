@@ -15,7 +15,7 @@ yaml-architecture/
 
 ---
 
-## 💻 Extracted Kubernetes Configuration Spec (`pod.yaml`)
+## 💻 Kubernetes Configuration Spec (`pod.yaml`)
 
 The verified, structurally accurate schema optimized to interface directly with the Kubernetes API Control Plane:
 
@@ -34,30 +34,53 @@ spec:
 
 ## 🚀 Version Control & Cluster Operations Guide
 
-Follow these sequential execution steps inside your terminal to sync your codebase and track revisions.
+These sequential execution steps inside the terminal to sync the codebase and track revisions.
 
-### 1. Update and Stage Files
-Track the corrected configurations inside your staging area workspace:
-```powershell
+### 📦 1. Repository Initialization & Initial History
+These commands initialize workspace database tracker and establish first operational checkpoint save.
+
+* Initialize a blank local Git repository inside the workspace folder:
+
+git init
+
+* Stage the corrected pod.yaml and new README.md files for tracking:
+
 git add pod.yaml README.md
-```
 
-### 2. Record Revision Commit History
-Save your localized workspace changes cleanly into your root historical branch line:
+* Review the staging area to verify which new files are ready to be saved:
+
+git status
+
+* Force rename the local timeline tracking branch to the industry-standard name main:
+
+git branch -M main
+<img width="1632" height="872" alt="image" src="https://github.com/user-attachments/assets/5920479b-a438-42a8-b44b-41f7eea73130" />
+
+
+### 📁 2. Commit History
+* This saves the staged files permanently into the local Git timeline history log:
 ```powershell
-git commit -m "fix: resolve metadata structure indentation and add README documentation"
+git commit -m "feat: create nginx pod YAML manifest and add documentation"
 ```
+### 🔗 3. Remote Cloud Synchronization
+* Link the local repository to the remote public cloud repository layout:
 
-### 3. Sync Remote Changes and Push
-Because your remote cloud repository contains a pre-generated file (like a LICENSE), merge the separate timeline histories into one unified track before finalizing the push operation:
+git remote add origin https://github.com/Berenice2425/YAML-architecture-for-Kubernetes-Pod-Manifest.git
+
+### 🔄 4. Sync Remote Changes and Push
+Because the remote cloud repository contains a pre-generated file (a LICENSE), merge the separate timeline histories into one unified track before finalizing the push operation:
 ```powershell
 git pull origin main --allow-unrelated-histories --no-edit
 git push -u origin main
 ```
+<img width="1673" height="862" alt="image" src="https://github.com/user-attachments/assets/233fb418-e59a-498d-b222-74926dfada45" />
 
 ---
+
 
 ## ⚠️ Essential Schema Engineering Principles
 
 * **Immutable Whitespace Constraints**: YAML blocks rely completely on spatial offsets rather than curly brackets. Avoid typing the Tab key completely; enforce a strict structure using **2 character spaces** for child elements.
 * **Declarative Manifest State**: This manifest defines the ultimate execution goals. When pushed via `kubectl apply -f pod.yaml`, Kubernetes continually drives hardware parameters to align with this configuration baseline.
+
+  
