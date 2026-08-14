@@ -17,6 +17,53 @@ yaml-architecture/
 
 ## 💻 Kubernetes Configuration Spec (`pod.yaml`)
 
+### API Version
+
+echo "apiVersion: v1" > pod.yaml
+
+Creates a new pod.yaml file (overwriting any old contents) and inserts the core, stable Kubernetes API schema version.
+###  Resource Type
+
+echo "kind: Pod" >> pod.yaml
+
+Appends the resource classification to the file.
+###  Resource Metadata
+
+echo "metadata:" >> pod.yaml
+
+Appends the parent organizational block used by the cluster to hold names, tracking labels, and indexing context.
+###  Unique Identifier
+
+echo "  name: nginx-pod" >> pod.yaml
+
+Appends the unique name identifier string under the metadata layer to locate the running Pod instance within the cluster namespace.
+### Desired State Specification
+
+echo "spec:" >> pod.yaml
+
+Appends the technical engineering blueprint block that defines the target configuration constraints the cluster must actively maintain.
+### Container Manifest Array
+
+echo "  containers:" >> pod.yaml
+
+Appends the array list parent indicator that hosts the collection of isolated virtual application workflows inside this Pod.
+### Container Isolation Runtime Name
+
+echo "  - name: nginx" >> pod.yaml
+
+Appends a distinct container entry using the hyphen (-) indicator, assigning it a specific runtime tracking tag.
+### Container Registry Image Target
+
+echo "    image: nginx:latest" >> pod.yaml
+
+Appends the execution target, instructing the worker node container runtime to pull and execute the newest Nginx server binary package.
+### Print Manifest Verification
+
+cat pod.yaml
+
+Executes a terminal read operation to output the completed configuration file layout to the console for a final structural verification pass.
+------------------------------
+
 The verified, structurally accurate schema optimized to interface directly with the Kubernetes API Control Plane:
 
 ```yaml
@@ -28,8 +75,24 @@ spec:
   containers:
   - name: nginx            # Isolated operational logic name tag
     image: nginx:latest    # Image target pulling from the container hub registry
+
+<img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
+
 ```
 <img width="1458" height="593" alt="image" src="https://github.com/user-attachments/assets/f96034cc-80b0-447a-9f46-edf30980b84b" />
+
+*parent- child structure*
+metadata:
+  name: nginx-pod          # Globally unique identifier within the cluster namespace
+<img width="274" height="64" alt="image" src="https://github.com/user-attachments/assets/d475e3fe-9af2-4766-92c8-847092a43415" />
+
+*nested list: array*
+spec:
+  containers:
+  - name: nginx            # Isolated operational logic name tag
+    image: nginx:latest    # Image target pulling from the container hub registry
+
+<img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
 
 ---
 
@@ -82,6 +145,7 @@ git push -u origin main
 ## ⚠️ Essential Schema Engineering Principles
 
 * **Immutable Whitespace Constraints**: YAML blocks rely completely on spatial offsets rather than curly brackets. Avoid typing the Tab key completely; enforce a strict structure using **2 character spaces** for child elements.
+* *   **The Array Hyphen Protocol (`-`)**: The hyphen preceding `name: nginx` states that this block is an entry within a list array structure (`containers:`). Ensure uniform block spacing around this parameter.
 * **Declarative Manifest State**: This manifest defines the ultimate execution goals. When pushed via `kubectl apply -f pod.yaml`, Kubernetes continually drives hardware parameters to align with this configuration baseline.
 
   
