@@ -27,8 +27,6 @@ spec:
 ## Basic Concepts Treated
 *API Version*
 
-apiVersion: v1
-<img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
 
 *Resource Type*
 
@@ -39,16 +37,14 @@ kind: Pod
 <img width="274" height="64" alt="image" src="https://github.com/user-attachments/assets/d475e3fe-9af2-4766-92c8-847092a43415" />
 
 *nested list: array*
-
-spec:
-  containers:              # Declares the list array of isolated software application environments running inside this Pod.
-  - name: nginx            # Isolated operational logic name tag
-    image: nginx:latest    # Image target pulling from the container hub registry
     
-    The hyphen (-) instantiates a specific container entry, assigning it a unique runtime logging tag.
-
 <img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
 
+
+  The hyphen (-) instantiates a specific container entry, assigning it a unique runtime logging tag
+
+  ---
+  
 
 | Architectural Layer | Terminal Execution Command | Functional Operational Description |
 |---|---|---|
@@ -62,6 +58,7 @@ spec:
 | Container Registry Image Target | echo " image: nginx:latest" >> pod.yaml | Appends the execution target, instructing the worker node container runtime to pull and execute the newest Nginx server binary package. |
 | Print Manifest Verification | cat pod.yaml | Executes a terminal read operation to output the completed configuration file layout to the console for a final structural verification pass. |
 
+---
 
 ## 📁 Repository Project Structure
 
@@ -96,6 +93,8 @@ git status
 * Force rename the local timeline tracking branch to the industry-standard name main:
 
 git branch -M main
+
+
 <img width="1446" height="248" alt="image" src="https://github.com/user-attachments/assets/3a49b878-6fa7-4b2f-9b50-936fb22a67e2" />
 
 
