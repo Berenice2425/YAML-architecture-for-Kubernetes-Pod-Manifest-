@@ -35,6 +35,7 @@ apiVersion: v1
 
 
 
+
 *2. Resource Type*  
 
 ```yaml
@@ -42,6 +43,7 @@ kind: Pod
 ```
   
 <img width="299" height="101" alt="image" src="https://github.com/user-attachments/assets/4cd4e40b-ba2a-4c05-aa28-4ec607996ac4" />
+
 
 
 
@@ -53,6 +55,8 @@ metadata:
 ```
 
 <img width="274" height="64" alt="image" src="https://github.com/user-attachments/assets/d475e3fe-9af2-4766-92c8-847092a43415" />
+
+
 
 
 *4. nested list: array*
@@ -69,7 +73,9 @@ spec:
   The hyphen (-) instantiates a specific container entry, assigning it a unique runtime logging tag
 
   ---
+
   
+## 🛠️ Architectural Layer and functions
 
 | Architectural Layer | Terminal Execution Command | Functional Operational Description |
 |---|---|---|
