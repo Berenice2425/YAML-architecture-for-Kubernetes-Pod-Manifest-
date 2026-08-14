@@ -26,11 +26,13 @@ spec:
 
 ## Basic Concepts Treated
 *API Version*
-
+<img width="287" height="69" alt="image" src="https://github.com/user-attachments/assets/bef2a4d1-a0de-43d2-870f-8bde4ab01718" />
 
 *Resource Type*
 
 kind: Pod
+<img width="299" height="101" alt="image" src="https://github.com/user-attachments/assets/4cd4e40b-ba2a-4c05-aa28-4ec607996ac4" />
+
 
 *parent- child structure*
 
