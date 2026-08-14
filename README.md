@@ -24,7 +24,7 @@ spec:
 
 ---
 
-## Basic Concepts Treated
+## Basic Concepts Applied
 *1. API Version*
 
   ```yaml
