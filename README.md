@@ -29,7 +29,7 @@ spec:
   - name: nginx            # Isolated operational logic name tag
     image: nginx:latest    # Image target pulling from the container hub registry
 ```
-<img width="1464" height="676" alt="image" src="https://github.com/user-attachments/assets/ebd596dd-5915-410a-86bf-552ce710cb38" />
+<img width="1458" height="593" alt="image" src="https://github.com/user-attachments/assets/f96034cc-80b0-447a-9f46-edf30980b84b" />
 
 ---
 
@@ -55,7 +55,7 @@ git status
 * Force rename the local timeline tracking branch to the industry-standard name main:
 
 git branch -M main
-<img width="1391" height="237" alt="image" src="https://github.com/user-attachments/assets/e6123723-25b8-49f3-8d6f-d1e70c8d7ea4" />
+<img width="1446" height="248" alt="image" src="https://github.com/user-attachments/assets/3a49b878-6fa7-4b2f-9b50-936fb22a67e2" />
 
 
 ### 📁 2. Commit History
