@@ -147,7 +147,7 @@ git push -u origin main
 ## ⚠️ Essential Schema Engineering Principles
 
 * **Immutable Whitespace Constraints**: YAML blocks rely completely on spatial offsets rather than curly brackets. Avoid typing the Tab key completely; enforce a strict structure using **2 character spaces** for child elements.
-* *   **The Array Hyphen Protocol (`-`)**: The hyphen preceding `name: nginx` states that this block is an entry within a list array structure (`containers:`). Ensure uniform block spacing around this parameter.
+*    **The Array Hyphen Protocol (`-`)**: The hyphen preceding `name: nginx` states that this block is an entry within a list array structure (`containers:`). Ensure uniform block spacing around this parameter.
 * **Declarative Manifest State**: This manifest defines the ultimate execution goals. When pushed via `kubectl apply -f pod.yaml`, Kubernetes continually drives hardware parameters to align with this configuration baseline.
 
   
