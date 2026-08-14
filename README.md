@@ -136,8 +136,9 @@ git commit -m "feat: create nginx pod YAML manifest and add documentation"
 ```
 ### 🔗 3. Remote Cloud Synchronization
 * Link the local repository to the remote public cloud repository layout:
-
+```powershell
 git remote add origin https://github.com/Berenice2425/YAML-architecture-for-Kubernetes-Pod-Manifest.git
+```
 
 ### 🔄 4. Sync Remote Changes and Push
 Because the remote cloud repository contains a pre-generated file (a LICENSE), merge the separate timeline histories into one unified track before finalizing the push operation:
