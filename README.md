@@ -26,18 +26,17 @@ spec:
 
 ## Basic Concepts Treated
 * 1. API Version*
-    ```yaml
-apiVersion: v1 
- ```
+  ```yaml
+apiVersion: v1
+```
 
 <img width="287" height="69" alt="image" src="https://github.com/user-attachments/assets/bef2a4d1-a0de-43d2-870f-8bde4ab01718" />
 
 
 *2. Resource Type*  
-  ```yaml
+```yaml
 kind: Pod
- ```
-
+```
   
 <img width="299" height="101" alt="image" src="https://github.com/user-attachments/assets/4cd4e40b-ba2a-4c05-aa28-4ec607996ac4" />
 
@@ -59,8 +58,8 @@ spec:
   - name: nginx            # Isolated operational logic name tag
     image: nginx:latest    # Image target pulling from the container hub registry
 ```
-<img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
 
+<img width="327" height="101" alt="image" src="https://github.com/user-attachments/assets/cd86aa1e-d456-40d1-ac2b-1aaa20c98d89" />
 
   The hyphen (-) instantiates a specific container entry, assigning it a unique runtime logging tag
 
